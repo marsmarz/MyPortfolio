@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Useless Lever
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <style>
+            .dash{
+                border-bottom:5px;
+                border-top:0px;
+                border-right:0px;
+                border-left:0px;
+                border-style:dashed;
+                border-color:darkred;
+            }
+            .box{
+                width:100%;
+            }
+            #backButton{
+                position:sticky;
+                top:0px;
+                left:0px;
+                width:5%;
+                background-color:lightblue;
+                border-style:dashed;
+                border-width:3px;
+                border-color:darkred;
+                z-index: 1000000;
+            }
+            #title{
+                position:absolute;
+                text-align:center;
+                width:100%;
+            }
+        </style>
+    </head>
+
+    <body style="font-family:'Courier New', Courier, monospace;background-color:lightblue;color:darkred;text-align:center;">
+        <div class="dash" id="title">
+            <h1>Useless Lever</h1>
+        </div>
+        <div id="backButton">Go Back</div>
+        <br>
+        <div class= "dash">
+            This is a box that has a lever built out of LEGO on the outside. 
+            When the lever is pulled from one side to the other, the distance 
+            sensor is able to detect it. When the distance sensor detects the change, 
+            a servo motor flips the lever back into place. The robot also tracks how many 
+            times the lever has been flipped and how long it was being flipped for, and broadcasts 
+            those numbers through the speaker at the press of a button. <br>
+        </div>
+        <div class="container-sm dash">
+            <br>
+            <div class="row">
+                <div class="col-4"><img src="Mario Sanchez box side view.jpg" class="box"><br>
+                From this angle, you can see the button that is used to have the speaker say the time and number of flicks.
+                Besides that, the button also stops the code from running.</div>
+                <div class="col-4"><img src="Mario Sanchez box front view.jpg" class="box"><br>
+                From the front, the lever can be seen. You can also see the hole through which the distance sensor can see and the motor can push a LEGO piece through to wack the lever back into place.
+                </div>
+                <div class="col-4"><img src="Mario Sanchez box top view.jpg" class="box"><br>
+                From the top, you can see the LEGO pieces on the bottom of the box used to keep the robot facing the right direction, as well as a bird's eye view of the sensors and servo motor.</div>
+            </div>
+        </div> <br>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AJm3deLL96U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </body>
+</html>
