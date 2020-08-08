@@ -6,29 +6,51 @@
         </title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <style>
-            /* @media (max-width:900px){ */
+            @media (max-width:700px){
+                body{
+                    font-size: 20px;
+                }
+            }
+            @media (min-width: 701px){
+                body{
+                    font-size: 16px;
+                }
+            }
             #marioImage{
                 width:100%
             }
-            #boxImage{
+            .image{
                 width:100%;
+            }
+            body{
+                text-align: center;
+                font-family:'Courier New', Courier, monospace;
+                background-color:lightblue;
+                color:darkred;
+            }
+            #title{
+                margin-top: 10px;
+                margin-bottom: 0px;
             }
         </style>
     </head>
 
-    <body style="font-family:'Courier New', Courier, monospace;background-color:lightblue;color:darkred;">
-        <div><h1 style="text-align:center;">Mario J. Sánchez Méndez</h1></div>
+    <body>
+        <div id="title"><h1>Mario J. Sánchez Méndez</h1></div>
         <div class="container-fluid" >
             <div class="row">
                 <div class="col-2" style="padding:0.5%;">
                     <img src="marioImage.JPG" id="marioImage" alt="Image of Mario Sánchez">
                 </div>
-                <div class="col-8" style="padding:0.5%;">
+                <div class="col-10" style="padding:0.5%;">
                     <div class="container">
                         <div class="row">
-                            <div class="col-6" style="text-align:center;">
-                                <a href="uselessLever.html" style="color:darkred"><img src="Mario Sanchez box front view.jpg" id="boxImage" alt="Useless Lever"><br>
+                            <div class="col-6">
+                                <a href="uselessLever.html" style="color:darkred"><img src="Mario Sanchez box front view.jpg" class="image" alt="Useless Lever"><br>
                                 Click here to view the Useless Lever!</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="jeopardy.html" style="color:darkred"><img src="jeopardy.JPG" class="image" alt="Jeopardy Game"><br>Click here to view the Jeopardy Game!</a>
                             </div>
                         </div>
                     </div>

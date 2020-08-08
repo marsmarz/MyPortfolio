@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Jeopardy Game
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <style>
+            .board{
+                width: 100%;
+            }
+            .dash{
+                border-bottom:5px;
+                border-top:0px;
+                border-right:0px;
+                border-left:0px;
+                border-style:dashed;
+                border-color:darkred;
+            }
+            #backButton{
+                position:sticky;
+                top:0px;
+                left:0px;
+                width:5%;
+                background-color:lightblue;
+                border-style:dashed;
+                border-width:3px;
+                border-color:darkred;
+                z-index: 1000000;
+            }
+            #title{
+                position:absolute;
+                text-align:center;
+                width:100%;
+            }
+            @media (max-width:700px){
+                body{
+                    font-size: 20px;
+                }
+            }
+            @media (min-width: 701px){
+                body{
+                    font-size: 16px;
+                }
+            }
+            body{
+                font-family:'Courier New', Courier, monospace;
+                background-color:lightblue;
+                color:darkred;
+                text-align:center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="title" class="dash">
+            <h1>Jeopardy Game</h1>
+        </div>
+        <div id="backButton"><a href="index.html" style="color:darkred"><div>Go Back</div></a></div>
+        <br>
+        <div class = "dash">
+            This project was an attempt at recreating a Jeopardy-style game through HTML and Javascript. 
+            This project was made in a group along with Alisha Farmer, Amna Jan, Ben Chapman, and Nick Babey. 
+            The rules don't line up 1 to 1 with Jeopardy, as Jeopardy was mostly taken as an inspiration for the 
+            general structure of the game, rather than it being used as an exact model. The way the game works is that 
+            there are two players, and each one takes a turn answering a question. If one person gets the question wrong, 
+            the other player gets the opportunity to guess. This keeps repeating until one of the two gets the answer correct, 
+            upon which the points are awarded to whoever got it correct, and it is displayed at the bottom. Once all of 
+            the questions are answered, the game will end and will announce which player got the most points. I worked primarily
+            on the Javascript along with Nick, while the rest worked primarily on the HTML.
+            <br>
+        </div>
+        <div class="dash">
+            <a href="https://ben-chapman8.github.io/navy-hackathon/" style="color:darkred;">Click here to access the game!</a>
+        </div><br>
+        <div class="container-sm dash">
+            <br>
+            <div class="row">
+                <div class="col-4"><img src="game over.JPG" class="board"><br>
+                This is what the game over screen looks like (when it's edited to show up after the first correct answer).
+                </div>
+                <div class="col-4"><img src="jeopardy.JPG" class="board"><br>
+                This is what the board looks like on the first turn.</div>
+                <div class="col-4"><img src="jeopardy player2.JPG" class="board"><br>
+                This is what the board looks like on player two's turn.
+                </div>
+            </div>
+        </div> <br>
+    </body>
+</html>

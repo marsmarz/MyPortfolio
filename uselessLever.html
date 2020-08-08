@@ -33,10 +33,26 @@
                 text-align:center;
                 width:100%;
             }
+            @media (max-width:700px){
+                body{
+                    font-size: 20px;
+                }
+            }
+            @media (min-width: 701px){
+                body{
+                    font-size: 16px;
+                }
+            }
+            body{
+                font-family:'Courier New', Courier, monospace;
+                background-color:lightblue;
+                color:darkred;
+                text-align:center;
+            }
         </style>
     </head>
 
-    <body style="font-family:'Courier New', Courier, monospace;background-color:lightblue;color:darkred;text-align:center;">
+    <body>
         <div class="dash" id="title">
             <h1>Useless Lever</h1>
         </div>
@@ -48,7 +64,8 @@
             sensor is able to detect it. When the distance sensor detects the change, 
             a servo motor flips the lever back into place. The robot also tracks how many 
             times the lever has been flipped and how long it was being flipped for, and broadcasts 
-            those numbers through the speaker at the press of a button. <br>
+            those numbers through the speaker at the press of a button. This project was made 
+            for the Tufts Engineering Design Lab.<br>
         </div>
         <div class="container-sm dash">
             <br>
